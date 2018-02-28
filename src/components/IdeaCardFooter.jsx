@@ -14,7 +14,7 @@ export const IdeaCardFooter = ({ handleDeleteClick, canDelete }) => (
       role="button"
       canDelete={canDelete}
       onClick={handleDeleteClick}
-    > <DeleteIcon /> Delete
+    > <DeleteIcon /><span>Delete</span>
     </DeleteLink>
   </IdeaCardFooterPanel>
 );

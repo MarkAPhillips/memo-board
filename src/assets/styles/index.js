@@ -25,4 +25,9 @@ export default () => injectGlobal`
     color:${colours.black};
     font-size:${fonts.size};
   }
+
+  svg {
+    vertical-align: text-bottom;
+    padding-right: .5em;
+  }
 `;

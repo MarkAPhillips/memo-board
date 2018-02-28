@@ -68,6 +68,7 @@ export const IdeaListPanel = styled.div`
 export const DeleteLink = styled.div`
    display: ${props => (props.canDelete ? 'block' : 'none')};
    color: ${colours.red};
+   font-size: 0.85em;
    cursor: pointer;
    &:hover {
     opacity: 0.7;
