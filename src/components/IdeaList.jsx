@@ -2,5 +2,4 @@ import React from 'react';
 import { IdeaCard } from './';
 
 export const IdeaList = ({ ideas }) =>
-  Object.keys(ideas)
-    .map(key => <IdeaCard key={key} idea={ideas[key]} />);
+  ideas.map(item => <IdeaCard key={item.id} idea={item} />);

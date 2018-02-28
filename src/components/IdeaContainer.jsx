@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { compose, lifecycle, withHandlers } from 'recompose';
-import { requestLoad, ideasSelector, requestCreate } from '../reducers/ideasReducer';
+import { requestLoad, ideasDefaultSelector, requestCreate } from '../reducers/ideasReducer';
 import { IdeaContainerPanel, IdeaListPanel, ButtonContainer } from './styles';
 import { PrimaryButton } from '../assets/styles/components';
 import { IdeaList } from './';
@@ -20,7 +20,7 @@ const propTypes = {
 };
 
 const mapStateToProps = state => ({
-  ideas: ideasSelector(state),
+  ideas: ideasDefaultSelector(state),
 });
 
 const enhance = compose(

@@ -1,3 +1,5 @@
+import values from 'lodash/values';
+import orderBy from 'lodash/orderBy';
 import API from '../constants';
 import { actionCreator } from './actionCreator';
 import normalise from '../utils/normalise';
@@ -103,4 +105,4 @@ export const requestEditing = actionCreator(EDITING_REQUEST, 'payload');
 export const editingUpdate = actionCreator(EDITING_SUCCESS, 'payload');
 
 // Selectors
-export const ideasSelector = state => state.ideas.list;
+export const ideasDefaultSelector = state => orderBy(values(state.ideas.list), ['created_date'], ['desc']);
