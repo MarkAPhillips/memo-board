@@ -40,7 +40,7 @@
     "axios": "^0.17.1",
     "babel-regenerator-runtime": "^6.5.0",
     "font-awesome": "^4.7.0",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.21",
     "moment": "^2.20.1",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
